@@ -4,6 +4,9 @@
 
 <br />
 <div align="center">
+  <a href="https://app.daily.dev/necrokochou"><img src="https://api.daily.dev/devcards/v2/efdiFPmQ5Zeea0rt79CB0.png?r=w1i&type=wide" width="652" alt="FLORESparuparo's Dev Card"/></a>
+</div>
+<div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="">
