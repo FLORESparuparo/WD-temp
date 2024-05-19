@@ -18,53 +18,129 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
 }
 
-header * {
-    display: flex;
-    justify-content: center;
+/* H E A D E R */
+.header {
+    display: grid;
+    grid-template: auto / auto auto;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 20px 0;
 }
 
-main div p {
-    font-size: 80%;
+.header .dp {
+    align-content: center;
 }
 
-.skills p {
-    display: inline;
-    margin: 4px;
-    height: max-content;
-    width: max-content;
+/* M A I N */
+.part {
+    display: grid;
+    grid: auto / auto max-content auto;
+    justify-self: space-between;
+    gap: 0 12px;
+}
+
+.part h3 {
+    align-content: center;
+    justify-self: center;
+    max-width: auto;
+    height: 0;
+    grid-column-start: 2;
+}
+
+.part .line {
+    height: 6px;
+    max-width: auto;
     background-color: #251b24;
-    border: none;
-    padding: 10px;
-    border-radius: 8px;
+    border-radius: 12px;
+    align-self: center;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    gap: 75px;
+#profile p {
+    margin: 0 20px 0;
+    text-align: justify;
 }
 
-footer button {
-    display: inline-block;
-    padding: 4px;
-    width: auto;
-    border: none;
-    border-radius: 4px;
-    background-color: #694e66;
-    cursor: pointer;
-    transition-duration: 0.4s;
+#skills {
+    display: grid;
+    grid: auto auto / 1fr 1fr 1fr;
+    justify-content: space-around;
+    gap: 0 16px;
 }
 
-button:hover {
-    background-color: #946c8f;
-}
-
-footer img {
-    width: 25px;
-    vertical-align: middle;
-
-}
-
-footer t {
+#skills p {
     margin: 4px;
+    padding: 8px 16px;
+    background-color: #5f455d;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#educ {
+    display: grid;
+    grid: repeat(5, max-content) / auto;
+    justify-self: center;
+}
+
+#educ div:not(#educ .line) {
+    display: grid;
+    grid: max-content / 1fr auto 1fr;
+    margin: 0 20px 0;
+    gap: 0 16px;
+}
+
+#educ .name {
+    max-width: max-content;
+    place-self: center start;
+    text-align: justify;
+}
+
+#educ .date {
+    grid-column-start: 2;
+    max-width: max-content;
+    padding: 4px 12px;
+    background-color: #5f455d;
+    border-radius: 12px;
+    place-self: center;
+}
+
+#educ .info {
+    grid-column-start: 3;
+    height: max-content;
+    max-width: max-content;
+    place-self: center end;
+    text-align: justify;
+}
+
+#educ .line {
+    height: 6px;
+    background-color: #251b24;
+    border-radius: 12px;
+    margin: 8px 0;
+}
+
+#career p {
+    margin: 0 20px 0;
+    text-align: justify;
+}
+
+/* F O O T E R */
+.footer {
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+}
+
+
+
+/* O U T L I N E */
+/*
+#educ * {
+    outline: green;
+    outline-style: dashed;
+    
+}
+/*
+* {
+    outline: red;
+    outline-style: dashed;
+    outline-width: 1px;
 }
